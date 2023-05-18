@@ -1,4 +1,4 @@
-@import "reset_styles.scss";
+@import "_reset";
 
 html {
 	scroll-behavior: smooth;
@@ -27,14 +27,22 @@ a {
 	text-align: center;
 }
 
+.burger {
+	display: none;
+}
+
 /*==================================== HEADER ====================================*/
 /*==================================== HEADER ====================================*/
 
 .header {
-	padding: 30px 0;
+
+	&__top {
+		padding: 20px 0;
+		margin: 0 -30px;
+	}
 
 	&__heading {
-		margin-bottom: 20px;
+		// margin-bottom: 20px;
 		letter-spacing: 4px;
 	}
 
@@ -49,8 +57,6 @@ a {
 		align-items: center;
 		height: 50px;
 	}
-
-	&__menu-item {}
 
 	&__menu-link {
 		color: #fff;
@@ -69,11 +75,13 @@ a {
 
 
 .works {
+	padding-bottom: 100px;
 
 	&__heading {
 		font-size: 30px;
 		padding: 20px;
 		text-align: center;
+		margin-bottom: 20px;
 	}
 
 	&__list {
@@ -87,6 +95,7 @@ a {
 		box-shadow: 0px 0px 20px 1px #e5e5e5;
 		border-radius: 20px;
 		overflow: hidden;
+		min-width: 150px;
 	}
 
 	&__list-link {
@@ -96,8 +105,8 @@ a {
 	}
 
 	&__list-img {
-		max-width: 280px;
-		max-height: 160px;
+		// max-width: 280px;
+		// max-height: 160px;
 		
 		img {
 			width: 100%;
@@ -113,3 +122,5 @@ a {
 		padding: 10px;
 	}
 }
+
+@import "_media";
