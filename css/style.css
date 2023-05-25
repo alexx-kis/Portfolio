@@ -167,6 +167,7 @@ a {
 /*==================================== WORKS ====================================*/
 .works {
   padding: 60px 0;
+  background: #000;
 }
 .works__heading {
   margin-bottom: 20px;
