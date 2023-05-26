@@ -30,6 +30,7 @@ a {
 
 .main-heading {
 	word-spacing: 10px;
+	line-height: 1.2;
 
 	&__title {
 		font-size: 60px;
@@ -92,6 +93,12 @@ a {
 		height: 50px;
 		flex: 1 1 auto;
 		max-width: 800px;
+	}
+
+	&__menu-item {
+		&--contact {
+			display: none;
+		}
 	}
 
 	&__menu-link {
@@ -165,7 +172,7 @@ a {
 /*==================================== ABOUT ====================================*/
 
 .about {
-	padding: 60px 0;
+	padding: 60px 0 20px;
 
 	&__heading {
 		margin-bottom: 30px;
@@ -195,6 +202,10 @@ a {
 
 	&__skills {
 		margin-top: 40px;
+
+		&--narrow {
+			display: none;
+		}
 	}
 
 	&__skills-title {
@@ -206,7 +217,7 @@ a {
 	&__skills-list {
 		display: flex;
 		flex-wrap: wrap;
-		max-width: 400px;
+		max-width: 500px;
 	}
 
 	&__skills-item {
@@ -226,7 +237,11 @@ a {
 		margin-left: 10px;
 	}
 
-	&__image {}
+	&__image {
+		&--small {
+			display: none;
+		}
+	}
 }
 
 
@@ -234,7 +249,7 @@ a {
 /*==================================== WORKS ====================================*/
 
 .works {
-	padding: 60px 0;
+	padding: 60px 0 20px;
 
 	&__heading {
 		margin-bottom: 20px;
@@ -284,24 +299,8 @@ a {
 /*==================================== CONTACTS ====================================*/
 /*==================================== CONTACTS ====================================*/
 
-.contacts {
-	padding: 60px 0;
-
-	&__menu {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-	}
-
-	&__menu-item {
-		padding: 10px;
-	}
-
-	&__menu-link {
-		text-decoration: underline;
-		color: #1e6372;
-	}
+.contact {
+	display: none;
 }
 
 @import "_media";
