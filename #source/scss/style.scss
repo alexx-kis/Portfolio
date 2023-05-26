@@ -4,7 +4,7 @@
 
 html {
 	scroll-behavior: smooth;
-	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	font-family: lato;
 
 	::-webkit-scrollbar {
 		width: 0;
@@ -242,7 +242,7 @@ a {
 
 	&__list {
 		display: grid;
-		grid-template: repeat(2, 1fr) / repeat(3, 1fr);
+		grid-template: repeat(3, 1fr) / repeat(3, 1fr);
 		justify-items: center;
 		gap: 30px;
 	}
