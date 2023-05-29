@@ -63,20 +63,11 @@ a {
 .header {
 	position: fixed;
 	width: 100%;
+	z-index: 2;
 
 	.container {
 		padding: 0;
 		max-width: 100%;
-	}
-
-	&__top {
-		// padding: 20px 0;
-		margin: 0 -30px;
-	}
-
-	&__heading {
-		// margin-bottom: 20px;
-		letter-spacing: 4px;
 	}
 
 	&__menu {
@@ -96,9 +87,6 @@ a {
 	}
 
 	&__menu-item {
-		&--contact {
-			display: none;
-		}
 	}
 
 	&__menu-link {
@@ -185,7 +173,7 @@ a {
 
 	&__info {
 		max-width: 820px;
-		margin-right: 10px;
+		margin-right: 20px;
 		line-height: 1.5;
 	}
 
@@ -221,8 +209,7 @@ a {
 	&__skills-list {
 		display: flex;
 		flex-wrap: wrap;
-		max-width: 500px;
-		margin-bottom: 1	0px;
+		margin-bottom: 10px;
 	}
 
 	&__skills-item {
@@ -245,7 +232,7 @@ a {
 
 	&__image {
 		img {
-			width: 100%;
+			// width: 100%;
 			// height: 100%;
 			object-fit: cover;
 		}
@@ -308,7 +295,41 @@ a {
 /*==================================== CONTACTS ====================================*/
 
 .contact {
-	// display: none;
+	padding: 60px 0;
+
+	&__heading {}
+
+	&__info {
+		padding: 40px 0;
+	}
+
+	&__info-item {
+		display: flex;
+		align-items: center;
+		margin-bottom: 20px;
+	}
+
+	&__info-icon {
+		margin-right: 10px;
+		img {
+			width: 20px;
+			height: 20px;
+		}
+	}
+
+	&__info-text {}
+
+	&__info-link {
+		transition: all .3s;
+		&:hover {
+			color: $hover-color;
+		}
+	}
 }
+
+
+
+/*==================================== MEDIA ====================================*/
+/*==================================== MEDIA ====================================*/
 
 @import "media";

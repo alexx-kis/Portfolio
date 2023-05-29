@@ -21,6 +21,23 @@
 }
 
 
+/*------------------------------ 660 ------------------------------*/
+@media (max-width: 660px) {
+	.about {
+		&__inner {
+			flex-direction: column;
+		}
+
+		&__image {
+			img {
+				width: 100%;
+				max-width: 290px;
+			}
+		}
+	}
+}
+
+
 
 /*------------------------------ 600 ------------------------------*/
 
@@ -29,12 +46,14 @@
 
 	.about {
 		&__title {
-			text-align: center;
+			// text-align: center;
 		}
 
 		&__skills {
-			max-width: 300px;
+			// max-width: 300px;
 		}
+
+
 	}
 
 	.works {
@@ -45,17 +64,20 @@
 }
 
 
+/*------------------------------ 550 ------------------------------*/
+@media (max-width: 550px) {
+	.header {
+		&__socials {
+			display: none;
+		}
+	}
+}
+
+
 /*------------------------------ 450 ------------------------------*/
 
 @media (max-width: 450px) {
 	.header {
-		&__menu {
-			&-item {
-				&--contact {
-					display: block;
-				}
-			}
-		}
 
 		&__socials {
 			display: none;
@@ -63,7 +85,6 @@
 	}
 
 	.contact {
-		display: block;
 		padding: 60px 0;
 
 		&__heading {
