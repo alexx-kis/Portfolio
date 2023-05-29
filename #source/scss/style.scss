@@ -4,7 +4,7 @@
 
 html {
 	scroll-behavior: smooth;
-	font-family: lato;
+	font-family: lato, Arial, Helvetica, sans-serif;
 
 	::-webkit-scrollbar {
 		width: 0;
@@ -34,20 +34,20 @@ a {
 
 	&__title {
 		font-size: 60px;
-		font-family: druk;
+		font-family: druk, 'Rubik Pixels';
 		margin-bottom: 20px;
 		color: #fff;
 	}
 
 	&__subtitle {
-		font-family: druk;
+		font-family: druk, 'Rubik Pixels';
 		color: #fff;
 		font-size: 40px;
 	}
 }
 
 .heading {
-	font-family: druk;
+	font-family: druk, 'Rubik Pixels';
 	font-size: 30px;
 	padding: 20px;
 	text-align: center;
@@ -86,8 +86,7 @@ a {
 		max-width: 800px;
 	}
 
-	&__menu-item {
-	}
+	&__menu-item {}
 
 	&__menu-link {
 		color: #fff;
@@ -98,6 +97,40 @@ a {
 		&:hover {
 			color: $hover-color;
 		}
+	}
+
+	&__lang {
+		width: 80px;
+		cursor: pointer;
+		position: relative;
+		display: flex;
+		padding: 10px;
+
+		&:hover {
+			.lang__dropdown {
+				visibility: visible;
+				opacity: 1;
+			}
+		}
+	}
+
+	&__lang-selected {
+		display: flex;
+		align-items: center;
+	}
+
+	&__lang-icon {
+		margin-right: 10px;
+
+		img {
+			border-radius: 50%;
+			width: 20px;
+			height: 20px;
+		}
+	}
+
+	&__lang-name {
+		color: #fff;
 	}
 
 	&__socials {
@@ -131,6 +164,49 @@ a {
 		}
 	}
 }
+
+.lang {
+
+	&__dropdown {
+		border-radius: 0px 0px 10px 10px;
+		background: #247688;
+		width: 80px;
+		padding: 10px;
+		position: absolute;
+		top: 50px;
+		left: -1px;
+		visibility: hidden;
+		opacity: 0;
+		transition: all .3s;
+	}
+
+	&__dropdown-item {}
+
+	&__dropdown-link {
+		display: flex;
+		align-items: center;
+
+		&:hover .lang__dropdown-name {
+			color: $hover-color;
+		}
+	}
+
+	&__dropdown-icon {
+		margin-right: 10px;
+
+		img {
+			border-radius: 50%;
+			width: 20px;
+			height: 20px;
+		}
+	}
+
+	&__dropdown-name {
+		color: #fff;
+		transition: all .3s;
+	}
+}
+
 
 
 
@@ -311,6 +387,7 @@ a {
 
 	&__info-icon {
 		margin-right: 10px;
+
 		img {
 			width: 20px;
 			height: 20px;
@@ -321,6 +398,7 @@ a {
 
 	&__info-link {
 		transition: all .3s;
+
 		&:hover {
 			color: $hover-color;
 		}
