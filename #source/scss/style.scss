@@ -214,14 +214,20 @@ a {
 		font-size: 18px;
 	}
 
+	&__skills-subtitle {
+		margin-bottom: 20px;
+	}
+
 	&__skills-list {
 		display: flex;
 		flex-wrap: wrap;
 		max-width: 500px;
+		margin-bottom: 1	0px;
 	}
 
 	&__skills-item {
 		display: flex;
+		align-items: center;
 		margin-bottom: 15px;
 		margin-right: 15px;
 	}
@@ -238,8 +244,10 @@ a {
 	}
 
 	&__image {
-		&--small {
-			display: none;
+		img {
+			width: 100%;
+			// height: 100%;
+			object-fit: cover;
 		}
 	}
 }
@@ -300,7 +308,7 @@ a {
 /*==================================== CONTACTS ====================================*/
 
 .contact {
-	display: none;
+	// display: none;
 }
 
-@import "_media";
+@import "media";

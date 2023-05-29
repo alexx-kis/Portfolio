@@ -297,6 +297,9 @@ a {
   margin-bottom: 18px;
   font-size: 18px;
 }
+.about__skills-subtitle {
+  margin-bottom: 20px;
+}
 .about__skills-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -304,11 +307,15 @@ a {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   max-width: 500px;
+  margin-bottom: 1 0px;
 }
 .about__skills-item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-bottom: 15px;
   margin-right: 15px;
 }
@@ -319,8 +326,10 @@ a {
 .about__skills-name {
   margin-left: 10px;
 }
-.about__image--small {
-  display: none;
+.about__image img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 /*==================================== WORKS ====================================*/
@@ -366,10 +375,6 @@ a {
 
 /*==================================== CONTACTS ====================================*/
 /*==================================== CONTACTS ====================================*/
-.contact {
-  display: none;
-}
-
 /*==================================== MEDIA ====================================*/
 /*==================================== MEDIA ====================================*/
 /*------------------------------ 900 ------------------------------*/
@@ -380,38 +385,11 @@ a {
   .about__text {
     font-size: 16px;
   }
-  .about__image {
-    max-width: 290px;
-    margin: 0 auto;
-  }
-}
-/*------------------------------ 800 ------------------------------*/
-@media (max-width: 800px) {
-  .about__skills--wide {
-    display: none;
-  }
-  .about__skills--narrow {
-    display: block;
-  }
 }
 /*------------------------------ 600 ------------------------------*/
 @media (max-width: 600px) {
   .about__title {
     text-align: center;
-  }
-  .about__image {
-    display: none;
-  }
-  .about__image--small {
-    display: block;
-    margin-bottom: 20px;
-    overflow: hidden;
-  }
-  .about__image--small img {
-    width: 100%;
-    height: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
   }
   .about__skills {
     max-width: 300px;
