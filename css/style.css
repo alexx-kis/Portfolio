@@ -380,6 +380,10 @@ a {
   font-size: 18px;
   margin-bottom: 15px;
 }
+.about__icon img {
+  width: 27px;
+  height: 27px;
+}
 .about__skills {
   margin-top: 40px;
 }
