@@ -65,16 +65,16 @@ a {
 .header {
 	position: fixed;
 	width: 100%;
+	background: linear-gradient(to left, #1e6372, #2f96b0);
 	z-index: 2;
-
+	
 	.container {
 		padding: 0;
-		max-width: 100%;
+		max-width: 1920px;
 	}
-
+	
 	&__menu {
-		background: #1e6372;
-		background: linear-gradient(to left, #1e6372, #2f96b0);
+		width: 100%;
 		display: flex;
 		justify-content: space-between;
 	}

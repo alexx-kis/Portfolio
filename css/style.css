@@ -160,17 +160,17 @@ a {
 .header {
   position: fixed;
   width: 100%;
+  background: -webkit-gradient(linear, right top, left top, from(#1e6372), to(#2f96b0));
+  background: -o-linear-gradient(right, #1e6372, #2f96b0);
+  background: linear-gradient(to left, #1e6372, #2f96b0);
   z-index: 2;
 }
 .header .container {
   padding: 0;
-  max-width: 100%;
+  max-width: 1920px;
 }
 .header__menu {
-  background: #1e6372;
-  background: -webkit-gradient(linear, right top, left top, from(#1e6372), to(#2f96b0));
-  background: -o-linear-gradient(right, #1e6372, #2f96b0);
-  background: linear-gradient(to left, #1e6372, #2f96b0);
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
