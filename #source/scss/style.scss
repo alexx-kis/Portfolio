@@ -363,6 +363,10 @@ a {
 	}
 
 	&__list-link {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		height: 100%;
 		&:hover img {
 			transform: scale(1.1);
 		}
