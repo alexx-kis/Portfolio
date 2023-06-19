@@ -562,6 +562,9 @@ a {
     -webkit-transform: translateX(100%);
         -ms-transform: translateX(100%);
             transform: translateX(100%);
+    background: -webkit-gradient(linear, right top, left top, from(#1e6372), to(#2f96b0));
+    background: -o-linear-gradient(right, #1e6372, #2f96b0);
+    background: linear-gradient(to left, #1e6372, #2f96b0);
     width: 100%;
     top: 0;
     bottom: 0;
