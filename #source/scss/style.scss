@@ -67,12 +67,12 @@ a {
 	width: 100%;
 	background: linear-gradient(to left, #1e6372, #2f96b0);
 	z-index: 2;
-	
+
 	.container {
 		padding: 0;
 		max-width: 1920px;
 	}
-	
+
 	&__menu {
 		width: 100%;
 		display: flex;
@@ -231,6 +231,8 @@ a {
 
 	&__heading {
 		margin-bottom: 50px;
+		align-self: flex-start;
+		animation: slide-to-right 1s ease 0s 1 normal forwards;
 	}
 
 	&__button-box {}
@@ -243,6 +245,21 @@ a {
 		border-radius: 10px;
 		align-self: flex-start;
 		max-width: 200px;
+		animation: slide-to-right 1s ease .5s 1 normal forwards;
+		opacity: 0;
+		transform: translateX(-100px);
+	}
+}
+
+@keyframes slide-to-right {
+	from {
+		opacity: 0;
+		transform: translateX(-100px);
+	}
+
+	to {
+		opacity: 1;
+		transform: translateX(0%);
 	}
 }
 
@@ -255,6 +272,9 @@ a {
 
 	&__heading {
 		margin-bottom: 30px;
+		transform: translate(-100px, 0%);
+		opacity: 0;
+		transition: all 0.8s;
 	}
 
 	&__inner {
@@ -272,11 +292,17 @@ a {
 		font-weight: 700;
 		font-size: 30px;
 		margin-bottom: 20px;
+		transform: translate(-100px, 0%);
+		opacity: 0;
+		transition: all 0.8s;
 	}
 
 	&__text {
 		font-size: 18px;
 		margin-bottom: 15px;
+		transform: translate(-100px, 0%);
+		opacity: 0;
+		transition: all 0.8s;
 	}
 
 	&__icon {
@@ -329,12 +355,17 @@ a {
 	}
 
 	&__image {
+		transform: translate(100px, 0%);
+		opacity: 0;
+		transition: all 0.8s ease 0.5s;
+
 		img {
 			// width: 100%;
 			// height: 100%;
 			object-fit: cover;
 		}
 	}
+
 }
 
 
@@ -367,6 +398,7 @@ a {
 		flex-direction: column;
 		justify-content: space-between;
 		height: 100%;
+
 		&:hover img {
 			transform: scale(1.1);
 		}
@@ -437,3 +469,11 @@ a {
 /*==================================== MEDIA ====================================*/
 
 @import "media";
+
+
+/*==================================== Animation ====================================*/
+
+.anim-item--active {
+	opacity: 1;
+	transform: translate(0);
+}
