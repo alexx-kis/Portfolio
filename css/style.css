@@ -392,9 +392,9 @@ a {
 }
 .about__heading {
   margin-bottom: 30px;
-  -webkit-transform: translate(-100px, 0%);
-      -ms-transform: translate(-100px, 0%);
-          transform: translate(-100px, 0%);
+  -webkit-transform: translate(0px, -100px);
+      -ms-transform: translate(0px, -100px);
+          transform: translate(0px, -100px);
   opacity: 0;
   -webkit-transition: all 0.8s;
   -o-transition: all 0.8s;
@@ -450,9 +450,23 @@ a {
   font-family: druk;
   margin-bottom: 18px;
   font-size: 18px;
+  -webkit-transform: translate(-100px, 0%);
+      -ms-transform: translate(-100px, 0%);
+          transform: translate(-100px, 0%);
+  opacity: 0;
+  -webkit-transition: all 0.8s;
+  -o-transition: all 0.8s;
+  transition: all 0.8s;
 }
 .about__skills-subtitle {
   margin-bottom: 20px;
+  -webkit-transform: translate(-100px, 0%);
+      -ms-transform: translate(-100px, 0%);
+          transform: translate(-100px, 0%);
+  opacity: 0;
+  -webkit-transition: all 0.8s;
+  -o-transition: all 0.8s;
+  transition: all 0.8s;
 }
 .about__skills-list {
   display: -webkit-box;
@@ -461,6 +475,13 @@ a {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin-bottom: 10px;
+  -webkit-transform: translate(-100px, 0%);
+      -ms-transform: translate(-100px, 0%);
+          transform: translate(-100px, 0%);
+  opacity: 0;
+  -webkit-transition: all 0.8s;
+  -o-transition: all 0.8s;
+  transition: all 0.8s;
 }
 .about__skills-item {
   display: -webkit-box;
@@ -500,6 +521,13 @@ a {
 }
 .works__heading {
   margin-bottom: 20px;
+  -webkit-transform: translate(0px, -100px);
+      -ms-transform: translate(0px, -100px);
+          transform: translate(0px, -100px);
+  opacity: 0;
+  -webkit-transition: all 0.8s;
+  -o-transition: all 0.8s;
+  transition: all 0.8s;
 }
 .works__list {
   display: grid;
@@ -513,6 +541,13 @@ a {
   border-radius: 20px;
   overflow: hidden;
   min-width: 150px;
+  -webkit-transform: scale(0);
+      -ms-transform: scale(0);
+          transform: scale(0);
+  opacity: 0;
+  -webkit-transition: all 0.8s;
+  -o-transition: all 0.8s;
+  transition: all 0.8s;
 }
 .works__list-link {
   display: -webkit-box;
@@ -552,8 +587,24 @@ a {
 .contact {
   padding: 60px 0;
 }
+.contact__heading {
+  -webkit-transform: translate(0px, -100px);
+      -ms-transform: translate(0px, -100px);
+          transform: translate(0px, -100px);
+  opacity: 0;
+  -webkit-transition: all 0.8s;
+  -o-transition: all 0.8s;
+  transition: all 0.8s;
+}
 .contact__info {
   padding: 40px 0;
+  -webkit-transform: translate(-100px, 0px);
+      -ms-transform: translate(-100px, 0px);
+          transform: translate(-100px, 0px);
+  opacity: 0;
+  -webkit-transition: all 0.8s;
+  -o-transition: all 0.8s;
+  transition: all 0.8s;
 }
 .contact__info-item {
   display: -webkit-box;
@@ -793,4 +844,7 @@ a {
   -webkit-transform: translate(0);
       -ms-transform: translate(0);
           transform: translate(0);
+  -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+          transform: scale(1);
 }

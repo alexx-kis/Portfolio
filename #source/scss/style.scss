@@ -272,7 +272,7 @@ a {
 
 	&__heading {
 		margin-bottom: 30px;
-		transform: translate(-100px, 0%);
+		transform: translate(0px, -100px);
 		opacity: 0;
 		transition: all 0.8s;
 	}
@@ -324,16 +324,25 @@ a {
 		font-family: druk;
 		margin-bottom: 18px;
 		font-size: 18px;
+		transform: translate(-100px, 0%);
+		opacity: 0;
+		transition: all 0.8s;
 	}
 
 	&__skills-subtitle {
 		margin-bottom: 20px;
+		transform: translate(-100px, 0%);
+		opacity: 0;
+		transition: all 0.8s;
 	}
 
 	&__skills-list {
 		display: flex;
 		flex-wrap: wrap;
 		margin-bottom: 10px;
+		transform: translate(-100px, 0%);
+		opacity: 0;
+		transition: all 0.8s;
 	}
 
 	&__skills-item {
@@ -377,6 +386,9 @@ a {
 
 	&__heading {
 		margin-bottom: 20px;
+		transform: translate(0px, -100px);
+		opacity: 0;
+		transition: all 0.8s;
 	}
 
 	&__list {
@@ -391,6 +403,9 @@ a {
 		border-radius: 20px;
 		overflow: hidden;
 		min-width: 150px;
+		transform: scale(0);
+		opacity: 0;
+		transition: all 0.8s;
 	}
 
 	&__list-link {
@@ -431,10 +446,17 @@ a {
 .contact {
 	padding: 60px 0;
 
-	// &__heading {}
+	&__heading {
+		transform: translate(0px, -100px);
+		opacity: 0;
+		transition: all 0.8s;
+	}
 
 	&__info {
 		padding: 40px 0;
+		transform: translate(-100px, 0px);
+		opacity: 0;
+		transition: all 0.8s;
 	}
 
 	&__info-item {
@@ -476,4 +498,5 @@ a {
 .anim-item--active {
 	opacity: 1;
 	transform: translate(0);
+	transform: scale(1);
 }
