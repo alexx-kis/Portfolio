@@ -164,6 +164,36 @@ a {
   background: -o-linear-gradient(right, #1e6372, #2f96b0);
   background: linear-gradient(to left, #1e6372, #2f96b0);
   z-index: 2;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  opacity: 0;
+  -webkit-animation: anim-header 1s ease 1s forwards;
+          animation: anim-header 1s ease 1s forwards;
+}
+@-webkit-keyframes anim-header {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate(0, -100px);
+            transform: translate(0, -100px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+}
+@keyframes anim-header {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate(0, -100px);
+            transform: translate(0, -100px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
 }
 .header .container {
   padding: 0;
@@ -359,7 +389,6 @@ a {
       -ms-transform: translateX(-100px);
           transform: translateX(-100px);
 }
-
 @-webkit-keyframes slide-to-right {
   from {
     opacity: 0;
@@ -372,7 +401,6 @@ a {
             transform: translateX(0%);
   }
 }
-
 @keyframes slide-to-right {
   from {
     opacity: 0;
@@ -385,6 +413,7 @@ a {
             transform: translateX(0%);
   }
 }
+
 /*==================================== ABOUT ====================================*/
 /*==================================== ABOUT ====================================*/
 .about {
@@ -512,6 +541,7 @@ a {
 .about__image img {
   -o-object-fit: cover;
      object-fit: cover;
+  border-radius: 10px;
 }
 
 /*==================================== WORKS ====================================*/
