@@ -62,6 +62,8 @@
 /*------------------------------ 500 ------------------------------*/
 @media (max-width: 500px) {
 	.header {
+		opacity: 1;
+		animation: none;
 		&__heading {
 			margin-bottom: 0;
 			flex: 1 1 auto;
@@ -121,6 +123,16 @@
 		top: 15px;
 		right: 15px;
 		transition: all .3s;
+		opacity: 0;
+		animation: burger .5s 1s forwards;
+		@keyframes burger {
+			0% {
+				opacity: 0;
+			}
+			100% {
+				opacity: 1;
+			}
+		}
 
 		&__line {
 			transition: all .3s;

@@ -698,6 +698,11 @@ a {
 }
 /*------------------------------ 500 ------------------------------*/
 @media (max-width: 500px) {
+  .header {
+    opacity: 1;
+    -webkit-animation: none;
+            animation: none;
+  }
   .header__heading {
     margin-bottom: 0;
     -webkit-box-flex: 1;
@@ -778,6 +783,25 @@ a {
     -webkit-transition: all 0.3s;
     -o-transition: all 0.3s;
     transition: all 0.3s;
+    opacity: 0;
+    -webkit-animation: burger 0.5s 1s forwards;
+            animation: burger 0.5s 1s forwards;
+  }
+  @-webkit-keyframes burger {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes burger {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
   }
   .burger__line {
     -webkit-transition: all 0.3s;
