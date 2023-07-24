@@ -54,20 +54,18 @@ if (animItems.length > 0) {
 	
 	animOnScroll();
 
-	window.addEventListener('load', function () {
-		let header = document.querySelector('.header');
-		
-		header.classList.add('anim-item--active');
-	});
 }
-
 
 /*==================================== PRELOADER ====================================*/
 
 window.onload = function () {
-
 	setTimeout(function () {
 		document.querySelector('.preloader-wrapper').style.display = "none";
 	}, 400);
-
 };
+
+window.addEventListener('load', function () {
+	let header = document.querySelector('.header');
+	header.classList.add('header--loaded');
+	burger.classList.add('burger--loaded');
+});
