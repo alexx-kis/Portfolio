@@ -67,20 +67,9 @@ a {
 	width: 100%;
 	background: linear-gradient(to left, #1e6372, #2f96b0);
 	z-index: 2;
-	transition: all .5s;
 	opacity: 0;
-	animation: anim-header 1s ease  1s forwards;
-
-	@keyframes anim-header {
-		0% {
-			opacity: 0;
-			transform: translate(0, -100px);
-		}
-		100% {
-			opacity: 1;
-			transform: translate(0,0);
-		}
-	}
+	transform: translate(0, -100px);
+	transition: all 1s 1s;
 
 	.container {
 		padding: 0;
@@ -101,8 +90,6 @@ a {
 		flex: 1 1 auto;
 		max-width: 800px;
 	}
-
-	// &__menu-item {}
 
 	&__menu-link {
 		color: #fff;
@@ -246,7 +233,10 @@ a {
 	&__heading {
 		margin-bottom: 50px;
 		align-self: flex-start;
-		animation: slide-to-right 1s ease 0s 1 normal forwards;
+		opacity: 0;
+		transform: translate(-100px, 0);
+		transition: all 1s;
+		// animation: slide-to-right 1s ease 0s 1 normal forwards;
 	}
 
 	&__button-box {}
@@ -259,20 +249,9 @@ a {
 		border-radius: 10px;
 		align-self: flex-start;
 		max-width: 200px;
-		animation: slide-to-right 1s ease .5s 1 normal forwards;
 		opacity: 0;
-		transform: translateX(-100px);
-	}
-	@keyframes slide-to-right {
-		from {
-			opacity: 0;
-			transform: translateX(-100px);
-		}
-	
-		to {
-			opacity: 1;
-			transform: translateX(0%);
-		}
+		transform: translate(-100px, 0);
+		transition: all 1s .5s;
 	}
 }
 
@@ -286,7 +265,8 @@ a {
 
 	&__heading {
 		margin-bottom: 30px;
-		transform: translate(0px, -100px);
+		transform: translate(0px, -50px);
+		visibility: hidden;
 		opacity: 0;
 		transition: all 0.8s;
 	}
@@ -512,6 +492,7 @@ a {
 
 .anim-item--active {
 	opacity: 1;
-	transform: translate(0);
+	transform: translate(0, 0);
 	transform: scale(1);
+	visibility: visible;
 }

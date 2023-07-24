@@ -25,7 +25,7 @@ if (animItems.length > 0) {
 			let animItem = animItems[i];			// получаем каждый элемент в цикле
 			let animItemHeight = animItem.offsetHeight; //получаем высоту этого элемента
 			let animItemOffset = offset(animItem).top;	//позиция элемента относительно верха
-			let animStart = 4 //коэффициент, который будет регулировать момент старта анимации
+			let animStart = 4//коэффициент, который будет регулировать момент старта анимации
 			//Настройка момента старта анимации:
 			let animItemPoint = window.innerHeight - (animItemHeight / animStart);
 
@@ -42,12 +42,21 @@ if (animItems.length > 0) {
 				}
 			}
 
-			function offset(elem) {
-				let rect = elem.getBoundingClientRect(),
-					scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
-					scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-				return { top: rect.top + scrollTop, left: rect.left + scrollLeft }
-			}
+			
 		}
 	}
+	function offset(elem) {
+		let rect = elem.getBoundingClientRect(),
+			scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
+			scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+		return { top: rect.top + scrollTop, left: rect.left + scrollLeft }
+	}
+	
+	animOnScroll();
+
+	window.addEventListener('load', function () {
+		let header = document.querySelector('.header');
+		
+		header.classList.add('anim-item--active');
+	});
 }
