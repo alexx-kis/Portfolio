@@ -42,7 +42,7 @@ if (animItems.length > 0) {
 				}
 			}
 
-			
+
 		}
 	}
 	function offset(elem) {
@@ -51,7 +51,7 @@ if (animItems.length > 0) {
 			scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 		return { top: rect.top + scrollTop, left: rect.left + scrollLeft }
 	}
-	
+
 	animOnScroll();
 
 }
@@ -68,4 +68,10 @@ window.addEventListener('load', function () {
 	let header = document.querySelector('.header');
 	header.classList.add('header--loaded');
 	burger.classList.add('burger--loaded');
+
+	let loadings = document.querySelectorAll('.loading');
+	for (let loading of loadings) {
+		loading.classList.add('anim-item--active');
+
+	}
 });
