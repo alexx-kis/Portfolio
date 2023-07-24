@@ -60,3 +60,14 @@ if (animItems.length > 0) {
 		header.classList.add('anim-item--active');
 	});
 }
+
+
+/*==================================== PRELOADER ====================================*/
+
+window.onload = function () {
+
+	setTimeout(function () {
+		document.querySelector('.preloader-wrapper').style.display = "none";
+	}, 400);
+
+};
