@@ -85,7 +85,7 @@ $.scrollify({
 	scrollSpeed: 1100,
 	offset: 0,
 	scrollbars: true,
-	// standardScrollElements: ".works",	//- секция, у которой будет обычный скролл
+	standardScrollElements: ".about",	//- секция, у которой будет обычный скролл
 	setHeights: false,					//- подстраивание высот секций под высоту экрана
 	overflowScroll: true,
 	updateHash: true,

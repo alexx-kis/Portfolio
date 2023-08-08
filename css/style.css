@@ -523,8 +523,54 @@ a {
       -ms-transform: scale(0);
           transform: scale(0);
   opacity: 0;
+}
+.works__list-item:first-child {
   -webkit-transition: all 0.8s;
   transition: all 0.8s;
+}
+.works__list-item:nth-child(2) {
+  -webkit-transition: all 0.8s 0.5s;
+  transition: all 0.8s 0.5s;
+}
+.works__list-item:nth-child(3) {
+  -webkit-transition: all 0.8s 1s;
+  transition: all 0.8s 1s;
+}
+.works__list-item:nth-child(4) {
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
+}
+.works__list-item:nth-child(5) {
+  -webkit-transition: all 0.8s 0.5s;
+  transition: all 0.8s 0.5s;
+}
+.works__list-item:nth-child(6) {
+  -webkit-transition: all 0.8s 1s;
+  transition: all 0.8s 1s;
+}
+.works__list-item:nth-child(7) {
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
+}
+.works__list-item:nth-child(8) {
+  -webkit-transition: all 0.8s 0.5s;
+  transition: all 0.8s 0.5s;
+}
+.works__list-item:nth-child(9) {
+  -webkit-transition: all 0.8s 1s;
+  transition: all 0.8s 1s;
+}
+.works__list-item:nth-child(10) {
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
+}
+.works__list-item:nth-child(11) {
+  -webkit-transition: all 0.8s 0.5s;
+  transition: all 0.8s 0.5s;
+}
+.works__list-item:nth-child(12) {
+  -webkit-transition: all 0.8s 1s;
+  transition: all 0.8s 1s;
 }
 .works__list-link {
   display: -webkit-box;
@@ -734,6 +780,14 @@ a {
   .works__list {
     grid-template: repeat(3, 1fr)/repeat(2, 1fr);
   }
+  .works__list-item:nth-child(odd) {
+    -webkit-transition: all 0.8s;
+    transition: all 0.8s;
+  }
+  .works__list-item:nth-child(even) {
+    -webkit-transition: all 0.8s 0.5s;
+    transition: all 0.8s 0.5s;
+  }
 }
 /*------------------------------ 500 ------------------------------*/
 @media (max-width: 500px) {
@@ -918,6 +972,10 @@ a {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .works__list-item:nth-child(even) {
+    -webkit-transition: all 0.8s;
+    transition: all 0.8s;
   }
 }
 /*==================================== Animation ====================================*/
