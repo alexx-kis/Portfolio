@@ -453,11 +453,25 @@ a {
 	&__list-link {
 		display: flex;
 		flex-direction: column;
-		justify-content: space-between;
+		justify-content: center;
+		align-items: center;
 		height: 100%;
+		position: relative;
 
-		&:hover img {
-			transform: scale(1.1);
+		&:hover {
+			img {
+				transform: scale(1.2);
+			}
+
+			.works__list-title {
+				visibility: visible;
+				opacity: 1;
+			}
+
+			.works__list-img::after {
+				opacity: 1;
+				visibility: visible;
+			}
 		}
 	}
 
@@ -468,15 +482,37 @@ a {
 		img {
 			width: 100%;
 			height: 100%;
-			object-fit: 100%;
+			object-fit: cover;
+			transition: all .3s;
+			transform: scale(1.1);
+		}
+
+		&::after {
+			display: block;
+			content: '';
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			background: #03030394;
+			visibility: hidden;
+			opacity: 0;
 			transition: all .3s;
 		}
 	}
 
 	&__list-title {
-		font-size: 18px;
+		font-size: 30px;
 		text-align: center;
 		padding: 10px;
+		position: absolute;
+		color: #fff;
+		visibility: hidden;
+		opacity: 0;
+		transition: all .3s;
+
+
 	}
 }
 
@@ -484,7 +520,7 @@ a {
 /*==================================== CONTACTS ====================================*/
 
 .contact {
-	padding: 60px 0;
+	padding: 120px 0 60px;
 
 	&__heading {
 		transform: translate(0px, -100px);
@@ -497,12 +533,19 @@ a {
 		transform: translate(-100px, 0px);
 		opacity: 0;
 		transition: all 0.8s;
+		display: flex;
+		justify-content: space-between;
 	}
 
 	&__info-item {
 		display: flex;
 		align-items: center;
 		margin-bottom: 20px;
+		margin-right: 10px;
+
+		&:last-child {
+			margin-right: 0;
+		}
 	}
 
 	&__info-icon {
