@@ -459,8 +459,13 @@ a {
 		position: relative;
 
 		&:hover {
+
 			img {
-				transform: scale(1.2);
+				display: none;
+			}
+
+			video {
+				display: block;
 			}
 
 			.works__list-title {
@@ -476,29 +481,45 @@ a {
 	}
 
 	&__list-img {
-		// max-width: 280px;
-		// max-height: 160px;
 
 		img {
 			width: 100%;
 			height: 100%;
 			object-fit: cover;
 			transition: all .3s;
-			transform: scale(1.1);
 		}
 
-		&::after {
-			display: block;
-			content: '';
-			position: absolute;
-			top: 0;
-			bottom: 0;
-			left: 0;
-			right: 0;
-			background: #03030394;
-			visibility: hidden;
-			opacity: 0;
-			transition: all .3s;
+		&--mob {
+			display: none;
+		}
+
+
+
+		// &::after {
+		// 	display: block;
+		// 	content: '';
+		// 	position: absolute;
+		// 	top: 0;
+		// 	bottom: 0;
+		// 	left: 0;
+		// 	right: 0;
+		// 	background: #03030394;
+		// 	visibility: hidden;
+		// 	opacity: 0;
+		// 	transition: all .3s;
+		// }
+	}
+
+	&__list-video {
+		video {
+			width: 100%;
+			height: 100%;
+			display: none;
+			// transform: scale(1.05);
+		}
+
+		&--mob {
+			display: none;
 		}
 	}
 
