@@ -1038,7 +1038,7 @@ a {
   .works__list-video--mob {
     display: block;
   }
-  .works__list-video--mob video {
+  .works__list-video--mob img {
     width: 100%;
   }
 }
