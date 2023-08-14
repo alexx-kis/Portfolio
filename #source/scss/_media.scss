@@ -255,11 +255,12 @@
 
 		&__list-video {
 			display: none;
-			&--mob {
-				display: block;
-				img {
-					width: 100%;
-				}
+		}
+
+		&__list-video--mob {
+			display: block;
+			img {
+				width: 100%;
 			}
 		}
 	}
