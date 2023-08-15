@@ -143,7 +143,7 @@
 		</div>
 
 		<main class="main">
-			<section class="main__hero hero">
+			<section class="main__hero hero scroll">
 				<div class="container">
 					<div class="hero__inner">
 						<div class="hero__heading main-heading loading">
@@ -155,7 +155,7 @@
 				</div>
 			</section>
 
-			<section class="main__about about" id="about">
+			<section class="main__about about scroll" id="about">
 				<div class="container">
 					<h2 class="about__heading heading anim-item anim-no-hide">About me</h2>
 					<div class="about__inner">
@@ -184,122 +184,141 @@
 							<img src="./img/about/1743-sq.jpg" alt="">
 						</div>
 					</div>
-					<div class="about__skills">
-						<div class="about__skills-title anim-item anim-no-hide">My skills</div>
-						<p class="about__skills-subtitle anim-item anim-no-hide">Coding:</p>
-						<ul class="about__skills-list anim-item anim-no-hide">
-							<li class="about__skills-item">
-								<div class="about__skills-icon">
-									<img src="./img/about/html-icon.png" alt="">
-								</div>
-								<div class="about__skills-name">HTML</div>
-							</li>
-							<li class="about__skills-item">
-								<div class="about__skills-icon">
-									<img src="./img/about/css-icon.png" alt="">
-								</div>
-								<div class="about__skills-name">CSS</div>
-							</li>
-							<li class="about__skills-item">
-								<div class="about__skills-icon">
-									<img src="./img/about/scss-icon.png" alt="">
-								</div>
-								<div class="about__skills-name">SCSS</div>
-							</li>
-							<li class="about__skills-item">
-								<div class="about__skills-icon">
-									<img src="./img/about/adaptive-icon.png" alt="">
-								</div>
-								<div class="about__skills-name">Adaptive website coding</div>
-							</li>
-							<li class="about__skills-item">
-								<div class="about__skills-icon">
-									<img src="./img/about/semantic-icon.png" alt="">
-								</div>
-								<div class="about__skills-name">Semantic website coding</div>
-							</li>
-						</ul>
-						<p class="about__skills-subtitle anim-item anim-no-hide">Coding methodologies:</p>
-						<ul class="about__skills-list anim-item anim-no-hide">
-							<li class="about__skills-item">
-								<div class="about__skills-icon">
-									<img src="./img/about/bem.png" alt="">
-								</div>
-								<div class="about__skills-name">BEM</div>
-							</li>
-						</ul>
-						<p class="about__skills-subtitle anim-item anim-no-hide">Programming languages and libraries:
-						</p>
-						<ul class="about__skills-list anim-item anim-no-hide">
-							<li class="about__skills-item">
-								<div class="about__skills-icon">
-									<img src="./img/about/js-icon.png" alt="">
-								</div>
-								<div class="about__skills-name">JavaScript</div>
-							</li>
-							<li class="about__skills-item">
-								<div class="about__skills-icon">
-									<img src="./img/about/jq-icon.png" alt="">
-								</div>
-								<div class="about__skills-name">jQuery</div>
-							</li>
-						</ul>
-						<p class="about__skills-subtitle anim-item anim-no-hide">Version control systems:</p>
-						<ul class="about__skills-list anim-item anim-no-hide">
-							<li class="about__skills-item">
-								<div class="about__skills-icon">
-									<img src="./img/about/git-icon.png" alt="">
-								</div>
-								<div class="about__skills-name">Git</div>
-							</li>
-							<li class="about__skills-item">
-								<div class="about__skills-icon">
-									<img src="./img/about/github-icon.png" alt="">
-								</div>
-								<div class="about__skills-name">GitHub</div>
-							</li>
-						</ul>
-						<p class="about__skills-subtitle anim-item anim-no-hide">Graphics editors:</p>
-						<ul class="about__skills-list anim-item anim-no-hide">
-							<li class="about__skills-item">
-								<div class="about__skills-icon">
-									<img src="./img/about/figma-icon.png" alt="">
-								</div>
-								<div class="about__skills-name">Figma</div>
-							</li>
-							<li class="about__skills-item">
-								<div class="about__skills-icon">
-									<img src="./img/about/ps-icon.png" alt="">
-								</div>
-								<div class="about__skills-name">Adobe Photoshop</div>
-							</li>
-						</ul>
-						<p class="about__skills-subtitle anim-item anim-no-hide">Languages:</p>
-						<ul class="about__skills-list anim-item anim-no-hide">
-							<li class="about__skills-item">
-								<div class="about__skills-icon">
-									<img src="./img/icons/eng.png" alt="">
-								</div>
-								<div class="about__skills-name">English (B2)</div>
-							</li>
-							<li class="about__skills-item">
-								<div class="about__skills-icon">
-									<img src="./img/icons/rus.png" alt="">
-								</div>
-								<div class="about__skills-name">Russian (native)</div>
-							</li>
-							<li class="about__skills-item">
-								<div class="about__skills-icon">
-									<img src="./img/icons/ger.png" alt="">
-								</div>
-								<div class="about__skills-name">German (A2)</div>
-							</li>
-						</ul>
+
+				</div>
+			</section>
+ 
+			<section class="main__skills skills scroll">
+				<div class="container">
+
+					<div class="skills__heading heading anim-item anim-no-hide">My skills</div>
+					<div class="skills__inner">
+						<div class="skills__block">
+							<p class="skills__subtitle subtitle anim-item anim-no-hide">Coding:</p>
+							<ul class="skills__list anim-item anim-no-hide">
+								<li class="skills__item">
+									<div class="skills__icon">
+										<img src="./img/about/html-icon.png" alt="">
+									</div>
+									<div class="skills__name">HTML</div>
+								</li>
+								<li class="skills__item">
+									<div class="skills__icon">
+										<img src="./img/about/css-icon.png" alt="">
+									</div>
+									<div class="skills__name">CSS</div>
+								</li>
+								<li class="skills__item">
+									<div class="skills__icon">
+										<img src="./img/about/scss-icon.png" alt="">
+									</div>
+									<div class="skills__name">SCSS</div>
+								</li>
+								<li class="skills__item">
+									<div class="skills__icon">
+										<img src="./img/about/adaptive-icon.png" alt="">
+									</div>
+									<div class="skills__name">Adaptive website coding</div>
+								</li>
+								<li class="skills__item">
+									<div class="skills__icon">
+										<img src="./img/about/semantic-icon.png" alt="">
+									</div>
+									<div class="skills__name">Semantic website coding</div>
+								</li>
+							</ul>
+						</div>
+						<div class="skills__block">
+							<p class="skills__subtitle anim-item anim-no-hide">Coding methodologies:</p>
+							<ul class="skills__list anim-item anim-no-hide">
+								<li class="skills__item">
+									<div class="skills__icon">
+										<img src="./img/about/bem.png" alt="">
+									</div>
+									<div class="skills__name">BEM</div>
+								</li>
+							</ul>
+						</div>
+						<div class="skills__block">
+							<p class="skills__subtitle anim-item anim-no-hide">Programming languages and libraries:
+							</p>
+							<ul class="skills__list anim-item anim-no-hide">
+								<li class="skills__item">
+									<div class="skills__icon">
+										<img src="./img/about/js-icon.png" alt="">
+									</div>
+									<div class="skills__name">JavaScript</div>
+								</li>
+								<li class="skills__item">
+									<div class="skills__icon">
+										<img src="./img/about/jq-icon.png" alt="">
+									</div>
+									<div class="skills__name">jQuery</div>
+								</li>
+							</ul>
+						</div>
+						<div class="skills__block">
+							<p class="skills__subtitle anim-item anim-no-hide">Version control systems:</p>
+							<ul class="skills__list anim-item anim-no-hide">
+								<li class="skills__item">
+									<div class="skills__icon">
+										<img src="./img/about/git-icon.png" alt="">
+									</div>
+									<div class="skills__name">Git</div>
+								</li>
+								<li class="skills__item">
+									<div class="skills__icon">
+										<img src="./img/about/github-icon.png" alt="">
+									</div>
+									<div class="skills__name">GitHub</div>
+								</li>
+							</ul>
+						</div>
+						<div class="skills__block">
+							<p class="skills__subtitle anim-item anim-no-hide">Graphics editors:</p>
+							<ul class="skills__list anim-item anim-no-hide">
+								<li class="skills__item">
+									<div class="skills__icon">
+										<img src="./img/about/figma-icon.png" alt="">
+									</div>
+									<div class="skills__name">Figma</div>
+								</li>
+								<li class="skills__item">
+									<div class="skills__icon">
+										<img src="./img/about/ps-icon.png" alt="">
+									</div>
+									<div class="skills__name">Adobe Photoshop</div>
+								</li>
+							</ul>
+						</div>
+						<div class="skills__block">
+							<p class="skills__subtitle anim-item anim-no-hide">Languages:</p>
+							<ul class="skills__list anim-item anim-no-hide">
+								<li class="skills__item">
+									<div class="skills__icon">
+										<img src="./img/icons/eng.png" alt="">
+									</div>
+									<div class="skills__name">English (B2)</div>
+								</li>
+								<li class="skills__item">
+									<div class="skills__icon">
+										<img src="./img/icons/rus.png" alt="">
+									</div>
+									<div class="skills__name">Russian (native)</div>
+								</li>
+								<li class="skills__item">
+									<div class="skills__icon">
+										<img src="./img/icons/ger.png" alt="">
+									</div>
+									<div class="skills__name">German (A2)</div>
+								</li>
+							</ul>
+						</div>
 					</div>
 				</div>
 			</section>
 
-			<section class="main__works works" id="works">
+			<section class="main__works works scroll" id="works">
 				<div class="container">
 					<h2 class="works__heading heading anim-item anim-no-hide">My works</h2>
 					<ul class="works__list">
@@ -482,52 +501,53 @@
 				</div>
 			</section>
 
-			<section class="main__contact contact" id="contact">
+			<section class="main__contact contact scroll" id="contact">
 				<div class="container">
-					<h2 class="contact__heading heading anim-item anim-no-hide">My contacts</h2>
-					<ul class="contact__info anim-item anim-no-hide">
-						<li class="contact__info-item">
-							<div class="contact__info-icon">
-								<img src="./img/contact/location-icon.png" alt="">
-							</div>
-							<div class="contact__info-text">Russia, St. Petersburg</div>
-						</li>
-						<li class="contact__info-item">
-							<div class="contact__info-icon">
-								<img src="./img/icons/telegram.svg" alt="">
-							</div>
-							<div class="contact__info-text">
-								<a href="https://t.me/alexx_kis" class="contact__info-link">t.me/alexx_kis</a>
-							</div>
-						</li>
-						<li class="contact__info-item">
-							<div class="contact__info-icon">
-								<img src="./img/icons/github.svg" alt="">
-							</div>
-							<div class="contact__info-text">
-								<a href="https://github.com/alexx-kis"
-									class="contact__info-link">github.com/alexx-kis</a>
-							</div>
-						</li>
-						<li class="contact__info-item">
-							<div class="contact__info-icon">
-								<img src="./img/icons/email.svg" alt="">
-							</div>
-							<div class="contact__info-text">
-								<a href="mailto:alexander.s.kislov@gmail.com"
-									class="contact__info-link">alexander.s.kislov@gmail.com</a>
-							</div>
-						</li>
-						<li class="contact__info-item">
-							<div class="contact__info-icon">
-								<img src="./img/icons/phone.svg" alt="">
-							</div>
-							<div class="contact__info-text">
-								<a href="tel:+79995251970" class="contact__info-link">+7 (999) 525-19-70</a>
-							</div>
-						</li>
-
-					</ul>
+					<div class="contact__inner">
+						<h2 class="contact__heading heading anim-item anim-no-hide">My contacts</h2>
+						<ul class="contact__info anim-item anim-no-hide">
+							<li class="contact__info-item">
+								<div class="contact__info-icon">
+									<img src="./img/contact/location-icon.png" alt="">
+								</div>
+								<div class="contact__info-text">Russia, St. Petersburg</div>
+							</li>
+							<li class="contact__info-item">
+								<div class="contact__info-icon">
+									<img src="./img/icons/telegram.svg" alt="">
+								</div>
+								<div class="contact__info-text">
+									<a href="https://t.me/alexx_kis" class="contact__info-link">t.me/alexx_kis</a>
+								</div>
+							</li>
+							<li class="contact__info-item">
+								<div class="contact__info-icon">
+									<img src="./img/icons/github.svg" alt="">
+								</div>
+								<div class="contact__info-text">
+									<a href="https://github.com/alexx-kis"
+										class="contact__info-link">github.com/alexx-kis</a>
+								</div>
+							</li>
+							<li class="contact__info-item">
+								<div class="contact__info-icon">
+									<img src="./img/icons/email.svg" alt="">
+								</div>
+								<div class="contact__info-text">
+									<a href="mailto:alexander.s.kislov@gmail.com"
+										class="contact__info-link">alexander.s.kislov@gmail.com</a>
+								</div>
+							</li>
+							<li class="contact__info-item">
+								<div class="contact__info-icon">
+									<img src="./img/icons/phone.svg" alt="">
+								</div>
+								<div class="contact__info-text">
+									<a href="tel:+79995251970" class="contact__info-link">+7 (999) 525-19-70</a>
+								</div>
+							</li>
+						</ul>
+					</div>
 					<!-- <div class="contact__socials">
 						<ul class="contact__socials-list">
 							<li class="contact__socials-item">
@@ -614,7 +634,8 @@
 
 		</main>
 	</div>
-
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="js/jquery.scrollify.js"></script>
 	<script src="js/script.js"></script>
 </body>
 
