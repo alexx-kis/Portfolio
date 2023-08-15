@@ -593,7 +593,7 @@ a {
 .works__list-link:hover .works__list-img img {
   display: none;
 }
-.works__list-link:hover .works__list-video video {
+.works__list-link:hover .works__list-gif img {
   display: block;
 }
 .works__list-img img {
@@ -604,12 +604,12 @@ a {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
-.works__list-video video {
+.works__list-gif img {
   display: none;
   width: 100%;
   height: 100%;
 }
-.works__list-video--mob {
+.works__list--mob {
   display: none;
 }
 .works__list-title {
