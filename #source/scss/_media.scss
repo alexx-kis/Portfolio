@@ -245,19 +245,13 @@
 
 		&__list-img {
 			display: none;
-			// &--mob {
-			// 	display: block;
-			// 	img {
-			// 		width: 100%;
-			// 	}
-			// }
 		}
 
-		&__list-video {
+		&__list-gif {
 			display: none;
 		}
 
-		&__list-video--mob {
+		&__list--mob {
 			display: block;
 			img {
 				width: 100%;

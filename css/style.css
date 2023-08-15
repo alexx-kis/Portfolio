@@ -1021,13 +1021,13 @@ a {
   .works__list-img {
     display: none;
   }
-  .works__list-video {
+  .works__list-gif {
     display: none;
   }
-  .works__list-video--mob {
+  .works__list--mob {
     display: block;
   }
-  .works__list-video--mob img {
+  .works__list--mob img {
     width: 100%;
   }
 }
