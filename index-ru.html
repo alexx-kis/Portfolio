@@ -6,6 +6,7 @@
 		Portfolio Alex Kis
 	</title>
 	<meta http-equiv="Content-type" content='text/html;charset=UTF-8' />
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="icon" href="favicon.ico" type="image/x-icon">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -140,7 +141,7 @@
 		</div>
 
 		<main class="main">
-			<section class="main__hero hero">
+			<section class="main__hero hero scroll">
 				<div class="container">
 					<div class="hero__inner">
 						<div class="hero__heading main-heading loading">
@@ -153,323 +154,488 @@
 				</div>
 			</section>
 
-			<section class="main__about about" id="about">
+			<section class="main__about about scroll" id="about">
 				<div class="container">
-					<h2 class="about__heading heading anim-item anim-no-hide">Обо мне</h2>
 					<div class="about__inner">
-						<div class="about__info">
-							<h3 class="about__title anim-item anim-no-hide">Привет! Меня зовут Александр и я фронтенд
-								разработчик</h3>
-							<p class="about__text anim-item anim-no-hide">Родился и живу в Санкт-Петербурге.</p>
-							<p class="about__text anim-item anim-no-hide">
-								Закончил Санкт-Петербургский Государственный Химико-Фармацевтический университет и
-								последние годы работал биотехнологом по основному высшему образованию. Несколько лет
-								назад я начал изучать разработку сайтов,
-								сначала самостоятельно, затем на курсах.
-							</p>
-							<p class="about__text anim-item anim-no-hide">
+						<h2 class="about__heading heading anim-item anim-no-hide">Обо мне</h2>
+						<div class="about__content">
+							<div class="about__content-top">
+								<h3 class="about__title anim-item anim-no-hide">
+									Привет! Меня зовут Александр и я фронтенд
+									разработчик
+								</h3>
+								<div class="about__image anim-item anim-no-hide">
+									<img src="./img/about/1743-sq.jpg" alt="">
+								</div>
+							</div>
+							<div class="about__info">
+								<p class="about__text anim-item anim-no-hide">Родился и живу в Санкт-Петербурге.</p>
+								<p class="about__text anim-item anim-no-hide">
+									Закончил Санкт-Петербургский Государственный Химико-Фармацевтический университет и
+									последние годы работал биотехнологом по основному высшему образованию. Несколько лет
+									назад я начал изучать разработку сайтов,
+									сначала самостоятельно, затем на курсах.
+
+								</p>
+								<p class="about__text anim-item anim-no-hide">
 								Сейчас я продолжаю своё обучение, в частности более углублённо JavaScript.
-							</p>
-						</div>
-						<div class="about__image anim-item anim-no-hide">
-							<img src="./img/about/1743-sq.jpg" alt="">
-						</div>
-					</div>
-					<div class="about__skills">
-						<div class="about__skills-title anim-item anim-no-hide">Мои навыки</div>
-						<p class="about__skills-subtitle anim-item anim-no-hide">Вёрстка:</p>
-						<ul class="about__skills-list anim-item anim-no-hide">
-							<li class="about__skills-item">
-								<div class="about__skills-icon">
-									<img src="./img/about/html-icon.png" alt="">
-								</div>
-								<div class="about__skills-name">HTML</div>
-							</li>
-							<li class="about__skills-item">
-								<div class="about__skills-icon">
-									<img src="./img/about/css-icon.png" alt="">
-								</div>
-								<div class="about__skills-name">CSS</div>
-							</li>
-							<li class="about__skills-item">
-								<div class="about__skills-icon">
-									<img src="./img/about/scss-icon.png" alt="">
-								</div>
-								<div class="about__skills-name">SCSS</div>
-							</li>
-							<li class="about__skills-item">
-								<div class="about__skills-icon">
-									<img src="./img/about/adaptive-icon.png" alt="">
-								</div>
-								<div class="about__skills-name">Адаптивная вёрстка</div>
-							</li>
-							<li class="about__skills-item">
-								<div class="about__skills-icon">
-									<img src="./img/about/semantic-icon.png" alt="">
-								</div>
-								<div class="about__skills-name">Семантичная вёрстка</div>
-							</li>
-						</ul>
-						<p class="about__skills-subtitle anim-item anim-no-hide">Методолгии:</p>
-						<ul class="about__skills-list anim-item anim-no-hide">
-							<li class="about__skills-item">
-								<div class="about__skills-icon">
-									<img src="./img/about/bem.png" alt="">
-								</div>
-								<div class="about__skills-name">БЭМ</div>
-							</li>
-						</ul>
-						<p class="about__skills-subtitle anim-item anim-no-hide">Языки программирования и библиотеки:
-						</p>
-						<ul class="about__skills-list anim-item anim-no-hide">
-							<li class="about__skills-item">
-								<div class="about__skills-icon">
-									<img src="./img/about/js-icon.png" alt="">
-								</div>
-								<div class="about__skills-name">JavaScript</div>
-							</li>
-							<li class="about__skills-item">
-								<div class="about__skills-icon">
-									<img src="./img/about/jq-icon.png" alt="">
-								</div>
-								<div class="about__skills-name">jQuery</div>
-							</li>
-						</ul>
-						<p class="about__skills-subtitle anim-item anim-no-hide">Системы контроля версий:</p>
-						<ul class="about__skills-list anim-item anim-no-hide">
-							<li class="about__skills-item">
-								<div class="about__skills-icon">
-									<img src="./img/about/git-icon.png" alt="">
-								</div>
-								<div class="about__skills-name">Git</div>
-							</li>
-							<li class="about__skills-item">
-								<div class="about__skills-icon">
-									<img src="./img/about/github-icon.png" alt="">
-								</div>
-								<div class="about__skills-name">GitHub</div>
-							</li>
-						</ul>
-						<p class="about__skills-subtitle anim-item anim-no-hide">Графические редакторы:</p>
-						<ul class="about__skills-list anim-item anim-no-hide">
-							<li class="about__skills-item">
-								<div class="about__skills-icon">
-									<img src="./img/about/figma-icon.png" alt="">
-								</div>
-								<div class="about__skills-name">Figma</div>
-							</li>
-							<li class="about__skills-item">
-								<div class="about__skills-icon">
-									<img src="./img/about/ps-icon.png" alt="">
-								</div>
-								<div class="about__skills-name">Adobe Photoshop</div>
-							</li>
-						</ul>
-						<p class="about__skills-subtitle anim-item anim-no-hide">Языки:</p>
-						<ul class="about__skills-list anim-item anim-no-hide">
-							<li class="about__skills-item">
-								<div class="about__skills-icon">
-									<img src="./img/icons/eng.png" alt="">
-								</div>
-								<div class="about__skills-name">Английский (B2)</div>
-							</li>
-							<li class="about__skills-item">
-								<div class="about__skills-icon">
-									<img src="./img/icons/rus.png" alt="">
-								</div>
-								<div class="about__skills-name">Русский (родной)</div>
-							</li>
-							<li class="about__skills-item">
-								<div class="about__skills-icon">
-									<img src="./img/icons/ger.png" alt="">
-								</div>
-								<div class="about__skills-name">Немецкий (A2)</div>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</section>
-
-			<section class="main__works works" id="works">
-				<div class="container">
-					<h2 class="works__heading heading anim-item anim-no-hide">My works</h2>
-					<ul class="works__list">
-						<li class="works__list-item anim-item anim-no-hide">
-							<a href="https://alexx-kis.github.io/cloudbudget/" target="_blank" class="works__list-link">
-								<div class="works__list-img">
-									<img src="./img/works/cloudbudget.png" alt="">
-								</div>
-								<div class="works__list-gif">
-									<img src="./img/works/cloudbudget.gif" alt="">
-								</div>
-								<div class="works__list--mob">
-									<img src="./video/cloudbudget-mob.gif" alt="">
-								</div>
-							</a>
-						</li>
-						<li class="works__list-item anim-item anim-no-hide">
-							<a href="https://alexx-kis.github.io/Lemon/" target="_blank" class="works__list-link">
-								<div class="works__list-img">
-									<img src="./img/works/lemon.png" alt="">
-								</div>
-								<div class="works__list-gif">
-									<img src="./img/works/lemon.gif" alt="">
-								</div>
-								<div class="works__list--mob">
-									<img src="./img/works/lemon-mob.gif" alt="">
-								</div>
-							</a>
-						</li>
-						<li class="works__list-item anim-item anim-no-hide">
-							<a href="https://alexx-kis.github.io/Binary/" target="_blank" class="works__list-link">
-								<div class="works__list-img">
-									<img src="./img/works/binary.png" alt="">
-								</div>
-								<div class="works__list-gif">
-									<img src="./img/works/binary.gif">
-								</div>
-								<div class="works__list--mob">
-									<img src="./img/works/binary-mob.gif">
-								</div>
-							</a>
-						</li>
-						<li class="works__list-item anim-item anim-no-hide">
-							<a href="https://alexx-kis.github.io/Mammut/" target="_blank" class="works__list-link">
-								<div class="works__list-img">
-									<img src="./img/works/mammut.png" alt="">
-								</div>
-								<div class="works__list-gif">
-									<img src="./img/works/mammut.png">
-								</div>
-								<div class="works__list--mob">
-									<img src="./img/works/mammut-mob.gif">
-								</div>
-							</a>
-						</li>
-						<li class="works__list-item anim-item anim-no-hide">
-							<a href="https://alexx-kis.github.io/finsweet/" target="_blank" class="works__list-link">
-								<div class="works__list-img">
-									<img src="./img/works/finesweet.png" alt="">
-								</div>
-								<div class="works__list-gif">
-									<img src="./img/works/finesweet.gif">
-								</div>
-								<div class="works__list--mob">
-									<img src="./img/works/finesweet-mob.gif">
-								</div>
-							</a>
-						</li>
-						<li class="works__list-item anim-item anim-no-hide">
-							<a href="https://alexx-kis.github.io/domiktut/" target="_blank" class="works__list-link">
-								<div class="works__list-img">
-									<img src="./img/works/domiktut.png" alt="">
-								</div>
-								<div class="works__list-gif">
-									<img src="./img/works/domiktut.gif">
-								</div>
-								<div class="works__list--mob">
-									<img src="./img/works/domiktut-mob.gif">
-								</div>
-							</a>
-						</li>
-						<!-- <li class="works__list-item anim-item anim-no-hide">
-										<a href="https://alexx-kis.github.io/js-practice/" target="_blank" class="works__list-link">
-											<div class="works__list-img">
-												<img src="./img/works/js-practice.png" alt="">
-											</div>
-											<div class="works__list-gif">
-												<video loop autoplay muted src="./video/js-practice.gif"></video>
-											</div>
-											<div class="works__list--mob">
-												<video loop muted autoplay src="./video/js-practice-mob.gif"></video>
-											</div>
-											<div class="works__list-title">JS Practice</div>
-										</a>
-									</li> -->
-						<li class="works__list-item anim-item anim-no-hide">
-							<a href="https://alexx-kis.github.io/Free-Business-Theme/" target="_blank" class="works__list-link">
-								<div class="works__list-img">
-									<img src="./img/works/free-business-theme.png" alt="">
-								</div>
-								<div class="works__list-gif">
-									<img src="./img/works/free-business-theme.gif">
-								</div>
-								<div class="works__list--mob">
-									<img src="./img/works/free-business-theme-mob.gif">
-								</div>
-							</a>
-						</li>
-						<li class="works__list-item anim-item anim-no-hide">
-							<a href="https://alexx-kis.github.io/Delivery-Website/" target="_blank" class="works__list-link">
-								<div class="works__list-img">
-									<img src="./img/works/dhl.png" alt="">
-								</div>
-								<div class="works__list-gif">
-									<img src="./img/works/dhl.gif">
-								</div>
-								<div class="works__list--mob">
-									<img src="./img/works/dhl-mob.gif">
-								</div>
-							</a>
-						</li>
-						<li class="works__list-item anim-item anim-no-hide">
-							<a href="https://alexx-kis.github.io/IT-studio/" target="_blank" class="works__list-link">
-								<div class="works__list-img">
-									<img src="./img/works/it-studio.png" alt="">
-								</div>
-								<div class="works__list-gif">
-									<img src="./img/works/it-studio.gif">
-								</div>
-								<div class="works__list--mob">
-									<img src="./img/works/it-studio-mob.gif">
-								</div>
-							</a>
-						</li>
-						<li class="works__list-item anim-item anim-no-hide">
-							<a href="https://alexx-kis.github.io/CoinBase/" target="_blank" class="works__list-link">
-								<div class="works__list-img">
-									<img src="./img/works/coinbase.png" alt="">
-								</div>
-								<div class="works__list-gif">
-									<img src="./img/works/coinbase.gif">
-								</div>
-								<div class="works__list--mob">
-									<img src="./video/coinbase-mob.gif">
-								</div>
-							</a>
-						</li>
-						<li class="works__list-item anim-item anim-no-hide">
-							<a href="https://alexx-kis.github.io/Web-Development-Project/" target="_blank" class="works__list-link">
-								<div class="works__list-img">
-									<img src="./img/works/web-dev.png" alt="">
-								</div>
-								<div class="works__list-gif">
-									<img src="./img/works/web-dev.gif">
-								</div>
-								<div class="works__list--mob">
-									<img src="./img/works/web-dev-mob.gif">
-								</div>
-							</a>
-						</li>
-						<li class="works__list-item anim-item anim-no-hide">
-							<a href="https://alexx-kis.github.io/Vladimirskij-Standart/" target="_blank" class="works__list-link">
-								<div class="works__list-img">
-									<img src="./img/works/vs.png" alt="">
-								</div>
-								<div class="works__list-gif">
-									<img src="./img/works/vs.gif">
-								</div>
-								<div class="works__list--mob">
-									<img src="./img/works/vs-mob.gif">
-								</div>
-							</a>
-						</li>
+								</p>
+								
+							</div>
 			
-					</ul>
+						</div>
+					</div>
+			
 				</div>
 			</section>
 
-			<section class="main__contact contact" id="contact">
+			<section class="main__skills skills scroll">
+				<div class="container">
+
+					<div class="skills__inner">
+						<div class="skills__heading heading anim-item anim-no-hide">Мои навыки</div>
+						<div class="skills__content">
+							<div class="skills__group">
+								<p class="skills__subtitle subtitle anim-item anim-no-hide">Вёрстка:</p>
+								<ul class="skills__list anim-item anim-no-hide">
+									<li class="skills__item">
+										<div class="skills__icon">
+											<img src="./img/about/html-icon.png" alt="">
+										</div>
+										<div class="skills__name">HTML</div>
+									</li>
+									<li class="skills__item">
+										<div class="skills__icon">
+											<img src="./img/about/css-icon.png" alt="">
+										</div>
+										<div class="skills__name">CSS</div>
+									</li>
+									<li class="skills__item">
+										<div class="skills__icon">
+											<img src="./img/about/scss-icon.png" alt="">
+										</div>
+										<div class="skills__name">SCSS</div>
+									</li>
+									<li class="skills__item">
+										<div class="skills__icon">
+											<img src="./img/about/adaptive-icon.png" alt="">
+										</div>
+										<div class="skills__name">Адаптивная вёрстка</div>
+									</li>
+									<li class="skills__item">
+										<div class="skills__icon">
+											<img src="./img/about/semantic-icon.png" alt="">
+										</div>
+										<div class="skills__name">Семантическая вёрстка</div>
+									</li>
+								</ul>
+							</div>
+							<div class="skills__group">
+								<p class="skills__subtitle anim-item anim-no-hide">Методологии:</p>
+								<ul class="skills__list anim-item anim-no-hide">
+									<li class="skills__item">
+										<div class="skills__icon">
+											<img src="./img/about/bem.png" alt="">
+										</div>
+										<div class="skills__name">BEM</div>
+									</li>
+								</ul>
+							</div>
+							<div class="skills__group">
+								<p class="skills__subtitle anim-item anim-no-hide">Языки программирования и библиотеки:
+								</p>
+								<ul class="skills__list anim-item anim-no-hide">
+									<li class="skills__item">
+										<div class="skills__icon">
+											<img src="./img/about/js-icon.png" alt="">
+										</div>
+										<div class="skills__name">JavaScript</div>
+									</li>
+									<li class="skills__item">
+										<div class="skills__icon">
+											<img src="./img/about/jq-icon.png" alt="">
+										</div>
+										<div class="skills__name">jQuery</div>
+									</li>
+								</ul>
+							</div>
+							<div class="skills__group">
+								<p class="skills__subtitle anim-item anim-no-hide">Системы контроля версий:</p>
+								<ul class="skills__list anim-item anim-no-hide">
+									<li class="skills__item">
+										<div class="skills__icon">
+											<img src="./img/about/git-icon.png" alt="">
+										</div>
+										<div class="skills__name">Git</div>
+									</li>
+									<li class="skills__item">
+										<div class="skills__icon">
+											<img src="./img/about/github-icon.png" alt="">
+										</div>
+										<div class="skills__name">GitHub</div>
+									</li>
+								</ul>
+							</div>
+							<div class="skills__group">
+								<p class="skills__subtitle anim-item anim-no-hide">Графические редакторы:</p>
+								<ul class="skills__list anim-item anim-no-hide">
+									<li class="skills__item">
+										<div class="skills__icon">
+											<img src="./img/about/figma-icon.png" alt="">
+										</div>
+										<div class="skills__name">Figma</div>
+									</li>
+									<li class="skills__item">
+										<div class="skills__icon">
+											<img src="./img/about/ps-icon.png" alt="">
+										</div>
+										<div class="skills__name">Adobe Photoshop</div>
+									</li>
+								</ul>
+							</div>
+							<div class="skills__group">
+								<p class="skills__subtitle anim-item anim-no-hide">Языки:</p>
+								<ul class="skills__list anim-item anim-no-hide">
+									<li class="skills__item">
+										<div class="skills__icon">
+											<img src="./img/icons/eng.png" alt="">
+										</div>
+										<div class="skills__name">Английский (B2)</div>
+									</li>
+									<li class="skills__item">
+										<div class="skills__icon">
+											<img src="./img/icons/rus.png" alt="">
+										</div>
+										<div class="skills__name">Русский (родной)</div>
+									</li>
+									<li class="skills__item">
+										<div class="skills__icon">
+											<img src="./img/icons/ger.png" alt="">
+										</div>
+										<div class="skills__name">Немецкий (A2)</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="main__works works scroll" id="works">
+				<div class="container">
+					<div class="works__inner">
+						<h2 class="works__heading heading anim-item anim-no-hide">Мои работы</h2>
+						<ul class="works__list">
+							<li class="works__list-item anim-item anim-no-hide">
+								<a href="https://alexx-kis.github.io/cloudbudget/" target="_blank"
+									class="works__list-link">
+									<div class="works__list-img">
+										<img src="./img/works/cloudbudget.png" alt="">
+									</div>
+									<div class="works__list-gif">
+										<img src="./img/works/cloudbudget.gif" alt="">
+									</div>
+									<div class="works__list--mob">
+										<img src="./img/works/cloudbudget-mob.gif" alt="">
+									</div>
+								</a>
+							</li>
+							<li class="works__list-item anim-item anim-no-hide">
+								<a href="https://alexx-kis.github.io/Lemon/" target="_blank" class="works__list-link">
+									<div class="works__list-img">
+										<img src="./img/works/lemon.png" alt="">
+									</div>
+									<div class="works__list-gif">
+										<img src="./img/works/lemon.gif" alt="">
+									</div>
+									<div class="works__list--mob">
+										<img src="./img/works/lemon-mob.gif" alt="">
+									</div>
+								</a>
+							</li>
+							<li class="works__list-item anim-item anim-no-hide">
+								<a href="https://alexx-kis.github.io/Binary/" target="_blank" class="works__list-link">
+									<div class="works__list-img">
+										<img src="./img/works/binary.png" alt="">
+									</div>
+									<div class="works__list-gif">
+										<img src="./img/works/binary.gif">
+									</div>
+									<div class="works__list--mob">
+										<img src="./img/works/binary-mob.gif">
+									</div>
+								</a>
+							</li>
+							<li class="works__list-item anim-item anim-no-hide">
+								<a href="https://alexx-kis.github.io/Mammut/" target="_blank" class="works__list-link">
+									<div class="works__list-img">
+										<img src="./img/works/mammut.png" alt="">
+									</div>
+									<div class="works__list-gif">
+										<img src="./img/works/mammut.png">
+									</div>
+									<div class="works__list--mob">
+										<img src="./img/works/mammut-mob.gif">
+									</div>
+								</a>
+							</li>
+							<li class="works__list-item anim-item anim-no-hide">
+								<a href="https://alexx-kis.github.io/finsweet/" target="_blank"
+									class="works__list-link">
+									<div class="works__list-img">
+										<img src="./img/works/finesweet.png" alt="">
+									</div>
+									<div class="works__list-gif">
+										<img src="./img/works/finesweet.gif">
+									</div>
+									<div class="works__list--mob">
+										<img src="./img/works/finesweet-mob.gif">
+									</div>
+								</a>
+							</li>
+							<li class="works__list-item anim-item anim-no-hide">
+								<a href="https://alexx-kis.github.io/domiktut/" target="_blank"
+									class="works__list-link">
+									<div class="works__list-img">
+										<img src="./img/works/domiktut.png" alt="">
+									</div>
+									<div class="works__list-gif">
+										<img src="./img/works/domiktut.gif">
+									</div>
+									<div class="works__list--mob">
+										<img src="./img/works/domiktut-mob.gif">
+									</div>
+								</a>
+							</li>
+							<!-- <li class="works__list-item anim-item anim-no-hide">
+												<a href="https://alexx-kis.github.io/js-practice/" target="_blank" class="works__list-link">
+													<div class="works__list-img">
+														<img src="./img/works/js-practice.png" alt="">
+													</div>
+													<div class="works__list-gif">
+														<video loop autoplay muted src="./video/js-practice.gif"></video>
+													</div>
+													<div class="works__list--mob">
+														<video loop muted autoplay src="./video/js-practice-mob.gif"></video>
+													</div>
+													<div class="works__list-title">JS Practice</div>
+												</a>
+											</li> -->
+							<li class="works__list-item anim-item anim-no-hide">
+								<a href="https://alexx-kis.github.io/Free-Business-Theme/" target="_blank"
+									class="works__list-link">
+									<div class="works__list-img">
+										<img src="./img/works/free-business-theme.png" alt="">
+									</div>
+									<div class="works__list-gif">
+										<img src="./img/works/free-business-theme.gif">
+									</div>
+									<div class="works__list--mob">
+										<img src="./img/works/free-business-theme-mob.gif">
+									</div>
+								</a>
+							</li>
+							<li class="works__list-item anim-item anim-no-hide">
+								<a href="https://alexx-kis.github.io/Delivery-Website/" target="_blank"
+									class="works__list-link">
+									<div class="works__list-img">
+										<img src="./img/works/dhl.png" alt="">
+									</div>
+									<div class="works__list-gif">
+										<img src="./img/works/dhl.gif">
+									</div>
+									<div class="works__list--mob">
+										<img src="./img/works/dhl-mob.gif">
+									</div>
+								</a>
+							</li>
+							<li class="works__list-item anim-item anim-no-hide">
+								<a href="https://alexx-kis.github.io/IT-studio/" target="_blank"
+									class="works__list-link">
+									<div class="works__list-img">
+										<img src="./img/works/it-studio.png" alt="">
+									</div>
+									<div class="works__list-gif">
+										<img src="./img/works/it-studio.gif">
+									</div>
+									<div class="works__list--mob">
+										<img src="./img/works/it-studio-mob.gif">
+									</div>
+								</a>
+							</li>
+							<li class="works__list-item anim-item anim-no-hide">
+								<a href="https://alexx-kis.github.io/CoinBase/" target="_blank"
+									class="works__list-link">
+									<div class="works__list-img">
+										<img src="./img/works/coinbase.png" alt="">
+									</div>
+									<div class="works__list-gif">
+										<img src="./img/works/coinbase.gif">
+									</div>
+									<div class="works__list--mob">
+										<img src="./img/works/coinbase-mob.gif">
+									</div>
+								</a>
+							</li>
+							<li class="works__list-item anim-item anim-no-hide">
+								<a href="https://alexx-kis.github.io/Web-Development-Project/" target="_blank"
+									class="works__list-link">
+									<div class="works__list-img">
+										<img src="./img/works/web-dev.png" alt="">
+									</div>
+									<div class="works__list-gif">
+										<img src="./img/works/web-dev.gif">
+									</div>
+									<div class="works__list--mob">
+										<img src="./img/works/web-dev-mob.gif">
+									</div>
+								</a>
+							</li>
+							<li class="works__list-item anim-item anim-no-hide">
+								<a href="https://alexx-kis.github.io/Vladimirskij-Standart/" target="_blank"
+									class="works__list-link">
+									<div class="works__list-img">
+										<img src="./img/works/vs.png" alt="">
+									</div>
+									<div class="works__list-gif">
+										<img src="./img/works/vs.gif">
+									</div>
+									<div class="works__list--mob">
+										<img src="./img/works/vs-mob.gif">
+									</div>
+								</a>
+							</li>
+						</ul>
+						<div class="works__slider-outer">
+							<div class="works__slider">
+								<div class="works__slide">
+									<div class="works__slide-inner">
+										<a href="https://alexx-kis.github.io/cloudbudget/" target="_blank"
+											class="works__slide-link">
+											<div class="works__slide-img">
+												<img src="./img/works/cloudbudget-mob.gif" alt="">
+											</div>
+										</a>
+									</div>
+								</div>
+								<div class="works__slide">
+									<div class="works__slide-inner">
+										<a href="https://alexx-kis.github.io/Lemon/" target="_blank"
+											class="works__slide-link">
+											<div class="works__slide-img">
+												<img src="./img/works/lemon-mob.gif" alt="">
+											</div>
+										</a>
+									</div>
+								</div>
+								<div class="works__slide">
+									<div class="works__slide-inner">
+										<a href="https://alexx-kis.github.io/Binary/" target="_blank"
+											class="works__list-link">
+											<div class="works__slide-img">
+												<img src="./img/works/binary-mob.gif">
+											</div>
+										</a>
+									</div>
+								</div>
+								<div class="works__slide">
+									<div class="works__slide-inner">
+										<a href="https://alexx-kis.github.io/Mammut/" target="_blank"
+											class="works__list-link">
+											<div class="works__slide-img">
+												<img src="./img/works/mammut-mob.gif">
+											</div>
+										</a>
+									</div>
+								</div>
+								<div class="works__slide">
+									<div class="works__slide-inner">
+										<a href="https://alexx-kis.github.io/finsweet/" target="_blank"
+											class="works__list-link">
+											<div class="works__slide-img">
+												<img src="./img/works/finesweet-mob.gif">
+											</div>
+										</a>
+									</div>
+								</div>
+								<div class="works__slide">
+									<div class="works__slide-inner">
+										<a href="https://alexx-kis.github.io/domiktut/" target="_blank"
+											class="works__list-link">
+											<div class="works__slide-img">
+												<img src="./img/works/domiktut-mob.gif">
+											</div>
+										</a>
+									</div>
+								</div>
+								<div class="works__slide">
+									<div class="works__slide-inner">
+										<a href="https://alexx-kis.github.io/Free-Business-Theme/" target="_blank"
+											class="works__list-link">
+											<div class="works__slide-img">
+												<img src="./img/works/free-business-theme-mob.gif">
+											</div>
+										</a>
+									</div>
+								</div>
+								<div class="works__slide">
+									<div class="works__slide-inner">
+										<a href="https://alexx-kis.github.io/Delivery-Website/" target="_blank"
+											class="works__list-link">
+											<div class="works__slide-img">
+												<img src="./img/works/dhl-mob.gif">
+											</div>
+										</a>
+									</div>
+								</div>
+								<div class="works__slide">
+									<div class="works__slide-inner">
+										<a href="https://alexx-kis.github.io/IT-studio/" target="_blank"
+											class="works__list-link">
+											<div class="works__slide-img">
+												<img src="./img/works/it-studio-mob.gif">
+											</div>
+										</a>
+									</div>
+								</div>
+								<div class="works__slide">
+									<div class="works__slide-inner">
+										<a href="https://alexx-kis.github.io/CoinBase/" target="_blank"
+											class="works__list-link">
+											<div class="works__slide-img">
+												<img src="./img/works/coinbase-mob.gif">
+											</div>
+										</a>
+									</div>
+								</div>
+								<div class="works__slide">
+									<div class="works__slide-inner">
+										<a href="https://alexx-kis.github.io/Web-Development-Project/" target="_blank"
+											class="works__list-link">
+											<div class="works__slide-img">
+												<img src="./img/works/web-dev-mob.gif">
+											</div>
+										</a>
+									</div>
+								</div>
+								<div class="works__slide">
+									<div class="works__slide-inner">
+										<a href="https://alexx-kis.github.io/Vladimirskij-Standart/" target="_blank"
+											class="works__list-link">
+											<div class="works__slide-img">
+												<img src="./img/works/vs-mob.gif">
+											</div>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="works__dots"></div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- <section class="main__contact contact scroll" id="contact">
 				<div class="container">
 					<h2 class="contact__heading heading anim-item anim-no-hide">Контакты</h2>
 					<ul class="contact__info anim-item anim-no-hide">
@@ -516,12 +682,65 @@
 
 					</ul>
 				</div>
-			</section>
+			</section> -->
 
+			<section class="main__contact contact scroll" id="contact">
+				<div class="container">
+					<div class="contact__inner">
+						<h2 class="contact__heading heading anim-item anim-no-hide">Контакты</h2>
+						<ul class="contact__info anim-item anim-no-hide">
+							<li class="contact__info-item">
+								<div class="contact__info-icon">
+									<img src="./img/contact/location-icon.png" alt="">
+								</div>
+								<div class="contact__info-text">Россия, Санкт-Петербург</div>
+							</li>
+							<li class="contact__info-item">
+								<div class="contact__info-icon">
+									<img src="./img/icons/telegram.svg" alt="">
+								</div>
+								<div class="contact__info-text">
+									<a href="https://t.me/alexx_kis" class="contact__info-link">t.me/alexx_kis</a>
+								</div>
+							</li>
+							<li class="contact__info-item">
+								<div class="contact__info-icon">
+									<img src="./img/icons/github.svg" alt="">
+								</div>
+								<div class="contact__info-text">
+									<a href="https://github.com/alexx-kis"
+										class="contact__info-link">github.com/alexx-kis</a>
+								</div>
+							</li>
+							<li class="contact__info-item">
+								<div class="contact__info-icon">
+									<img src="./img/icons/email.svg" alt="">
+								</div>
+								<div class="contact__info-text">
+									<a href="mailto:alexander.s.kislov@gmail.com"
+										class="contact__info-link">alexander.s.kislov@gmail.com</a>
+								</div>
+							</li>
+							<li class="contact__info-item">
+								<div class="contact__info-icon">
+									<img src="./img/icons/phone.svg" alt="">
+								</div>
+								<div class="contact__info-text">
+									<a href="tel:+79995251970" class="contact__info-link">+7 (999) 525-19-70</a>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
 		</main>
 	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="js/jquery.scrollify.js"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+	<script src="js/script.js"></script>
 </body>
 
-<script src="js/script.js"></script>
 
 </html>
