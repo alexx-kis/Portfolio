@@ -736,6 +736,9 @@ a {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
+.works__slider {
+  display: none;
+}
 
 /*==================================== CONTACTS ====================================*/
 /*==================================== CONTACTS ====================================*/
@@ -1167,37 +1170,70 @@ a {
     fill: #ff9500;
   }
   .works {
-    padding-top: 100px;
+    padding-top: 70px;
+    padding-bottom: 30px;
   }
   .works__list {
+    display: none;
+  }
+  .works__slider {
+    display: block;
+    margin: 0 auto;
+    width: 40dvh;
+  }
+  .works__slide {
+    width: 100%;
+    height: 100%;
+  }
+  .works__slide-inner {
+    padding: 0 2dvh;
+  }
+  .works__slide-img img {
+    width: 100%;
+    border-radius: 1dvh;
+  }
+  .works__dots .slick-dots {
+    margin-top: 1dvh;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    width: 250px;
+  }
+  .works__dots li {
+    margin-right: 12px;
+  }
+  .works__dots li:last-child {
+    margin-right: 0;
+  }
+  .works__dots button {
+    font-size: 0;
+    background-color: transparent;
+    width: 10px;
+    height: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .works__dots button::before {
+    content: "";
+    height: 5px;
+    width: 5px;
     margin: 0 auto;
+    background-color: #B3B7BC;
+    border-radius: 3px;
   }
-  .works__list-item:nth-child(even) {
-    -webkit-transition: all 0.8s;
-    transition: all 0.8s;
-  }
-  .works__list-img {
-    display: none;
-  }
-  .works__list-gif {
-    display: none;
-  }
-  .works__list--mob {
-    display: block;
-  }
-  .works__list--mob img {
-    width: 100%;
+  .works__dots .slick-active button::before {
+    background-color: #424551;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
   }
 }
 /*------------------------------ 400 ------------------------------*/
