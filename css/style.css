@@ -145,7 +145,7 @@ a {
 .heading {
   font-family: druk, Arial, Helvetica, sans-serif;
   font-weight: 900;
-  font-size: 6dvh;
+  font-size: clamp(1px, 6dvh, 65px);
   padding: 2vh;
   text-align: center;
 }
@@ -389,10 +389,39 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  height: 100%;
+}
+.about__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  height: 100%;
+}
+.about__content-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  height: 80%;
+  margin-bottom: 1dvh;
 }
 .about__info {
   display: -webkit-box;
@@ -405,12 +434,12 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-right: 20px;
   line-height: 1.5;
 }
 .about__title {
   font-weight: 700;
-  font-size: 5dvh;
+  font-size: clamp(1px, 5dvh, 54px);
+  line-height: 1.5;
   margin-bottom: 2dvh;
   -webkit-transform: translate(-100px, 0%);
       -ms-transform: translate(-100px, 0%);
@@ -418,9 +447,10 @@ a {
   opacity: 0;
   -webkit-transition: all 0.8s;
   transition: all 0.8s;
+  margin-right: 30px;
 }
 .about__text {
-  font-size: 3dvh;
+  font-size: clamp(1px, 3dvh, 33px);
   margin-bottom: 1.4dvh;
   -webkit-transform: translate(-100px, 0%);
       -ms-transform: translate(-100px, 0%);
@@ -430,15 +460,24 @@ a {
   transition: all 0.8s;
   text-align: justify;
 }
-.about__image {
-  width: 50%;
-}
 .about__image img {
   border-radius: 30px;
+  width: 22.9dvh;
+}
+.about__icon {
+  height: 4.4dvh;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .about__icon img {
-  width: 27px;
-  height: 27px;
+  width: 2.5dvh;
 }
 
 /*==================================== SKILLS ====================================*/
@@ -449,17 +488,6 @@ a {
 }
 .skills__heading--narrow {
   display: none;
-}
-.skills__title {
-  font-family: druk;
-  margin-bottom: 1.8dvh;
-  font-size: 1.8dvh;
-  -webkit-transform: translate(-100px, 0%);
-      -ms-transform: translate(-100px, 0%);
-          transform: translate(-100px, 0%);
-  opacity: 0;
-  -webkit-transition: all 0.8s;
-  transition: all 0.8s;
 }
 .skills__inner {
   display: -webkit-box;
@@ -472,19 +500,40 @@ a {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  max-width: 990px;
-  margin: 0 auto;
-  height: 90%;
+  height: 100%;
 }
-.skills__block {
+.skills__title {
+  font-family: druk;
+  margin-bottom: 1.8dvh;
+  font-size: 1.8dvh;
+  -webkit-transform: translate(-100px, 0%);
+      -ms-transform: translate(-100px, 0%);
+          transform: translate(-100px, 0%);
+  opacity: 0;
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
+}
+.skills__content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-bottom: 1dvh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+.skills__group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 6dvh;
   line-height: 1.2;
+}
+.skills__group:last-child {
+  margin-bottom: 0;
 }
 .skills__subtitle {
   -webkit-transform: translate(-100px, 0%);
@@ -493,8 +542,10 @@ a {
   opacity: 0;
   -webkit-transition: all 0.8s;
   transition: all 0.8s;
-  font-size: 3dvh;
-  margin-right: 10px;
+  font-size: 2dvh;
+  font-weight: 700;
+  letter-spacing: 0.1dvh;
+  margin-right: 2.3dvh;
 }
 .skills__list {
   display: -webkit-box;
@@ -545,6 +596,19 @@ a {
 .works {
   padding: 60px 0 0 0;
 }
+.works__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
 .works__heading {
   margin-bottom: 2dvh;
   -webkit-transform: translate(0px, -100px);
@@ -561,7 +625,6 @@ a {
   gap: 3dvh;
   max-width: 95dvh;
   margin: 0 auto;
-  height: 77%;
 }
 .works__list-item {
   -webkit-box-shadow: 0px 0px 20px 1px #e5e5e5;
@@ -849,13 +912,28 @@ a {
 /*==================================== MEDIA ====================================*/
 /*==================================== MEDIA ====================================*/
 /*==================================== MEDIA ====================================*/
+/*------------------------------ 1110 ------------------------------*/
+@media (max-width: 1110px) {
+  .skills__group {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .skills__subtitle {
+    margin-bottom: 1dvh;
+  }
+  .skills__item {
+    padding-top: 1dvh;
+  }
+}
 /*------------------------------ 900 ------------------------------*/
 @media (max-width: 900px) {
   .about__title {
-    font-size: 26px;
+    font-size: 3dvh;
   }
   .about__text {
-    font-size: 16px;
+    font-size: 2dvh;
   }
   .contact__info {
     -webkit-box-orient: vertical;
@@ -867,6 +945,7 @@ a {
             align-items: center;
   }
 }
+/*------------------------------ 780 ------------------------------*/
 /*------------------------------ 660 ------------------------------*/
 @media (max-width: 660px) {
   .header__socials {
@@ -878,13 +957,22 @@ a {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .about__image img {
-    width: 100%;
-    max-width: 290px;
-  }
 }
 /*------------------------------ 600 ------------------------------*/
 @media (max-width: 600px) {
+  .about__title {
+    text-align: center;
+    margin-right: 0;
+  }
+  .about__content-top {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .skills__name {
+    font-size: 1.8dvh;
+  }
   .works__list {
     grid-template: repeat(3, 1fr)/repeat(2, 1fr);
   }
@@ -897,10 +985,16 @@ a {
     transition: all 0.8s 0.5s;
   }
 }
-/*------------------------------ 550 ------------------------------*/
-@media (max-width: 550px) {
-  .works__list-title {
-    font-size: 14px;
+/*------------------------------ 560 ------------------------------*/
+@media (max-width: 560px) {
+  .heading {
+    font-size: 4.5dvh;
+  }
+  .about__heading {
+    margin-bottom: 0;
+  }
+  .skills__group {
+    margin-bottom: 4dvh;
   }
 }
 /*------------------------------ 500 ------------------------------*/
@@ -1027,8 +1121,14 @@ a {
 }
 /*------------------------------ 450 ------------------------------*/
 @media (max-width: 450px) {
+  .heading {
+    font-size: 3.6dvh;
+  }
   .header__socials {
     display: none;
+  }
+  .about__title {
+    font-size: 2.5dvh;
   }
   .contact {
     padding: 60px 0;
@@ -1107,6 +1207,15 @@ a {
   }
   .main-heading__subtitle {
     font-size: 30px;
+  }
+  .heading {
+    font-size: 2.8dvh;
+  }
+  .about__title {
+    font-size: 2.2dvh;
+  }
+  .about__text {
+    font-size: 1.8dvh;
   }
 }
 /*==================================== Animation ====================================*/

@@ -2,17 +2,35 @@
 /*==================================== MEDIA ====================================*/
 
 
+/*------------------------------ 1110 ------------------------------*/
+
+@media (max-width: 1110px) {
+	.skills {
+		&__group {
+			flex-direction: column;
+		}
+
+		&__subtitle {
+			margin-bottom: 1dvh;
+		}
+
+		&__item {
+			padding-top: 1dvh;
+		}
+	}
+}
+
 
 /*------------------------------ 900 ------------------------------*/
 
 @media (max-width: 900px) {
 	.about {
 		&__title {
-			font-size: 26px;
+			font-size: 3dvh;
 		}
 
 		&__text {
-			font-size: 16px;
+			font-size: 2dvh;
 		}
 
 		&__info {}
@@ -23,6 +41,21 @@
 		&__info {
 			flex-direction: column;
 			align-items: center;
+		}
+	}
+}
+
+
+/*------------------------------ 780 ------------------------------*/
+
+@media (max-width: 780px) {
+	.skills {
+		&__subtitle {
+			// font-size: 1.8dvh;
+		}
+
+		&__name {
+			// font-size: 1.2dvh;
 		}
 	}
 }
@@ -39,19 +72,33 @@
 		&__inner {
 			flex-direction: column;
 		}
-
-		&__image {
-			img {
-				width: 100%;
-				max-width: 290px;
-			}
-		}
 	}
 }
 
 /*------------------------------ 600 ------------------------------*/
 
 @media (max-width: 600px) {
+
+	.about {
+		&__title {
+			text-align: center;
+			margin-right: 0;
+		}
+
+		&__content-top {
+			flex-direction: column;
+		}
+
+		&__image {
+			// width: 220px;
+		}
+	}
+
+	.skills {
+		&__name {
+			font-size: 1.8dvh;
+		}
+	}
 
 	.works {
 		&__list {
@@ -71,12 +118,22 @@
 }
 
 
-/*------------------------------ 550 ------------------------------*/
+/*------------------------------ 560 ------------------------------*/
 
-@media (max-width: 550px) {
-	.works {
-		&__list-title {
-			font-size: 14px;
+@media (max-width: 560px) {
+	.heading {
+		font-size: 4.5dvh;
+	}
+
+	.about {
+		&__heading {
+			margin-bottom: 0;
+		}
+	}
+
+	.skills {
+		&__group {
+			margin-bottom: 4dvh;
 		}
 	}
 }
@@ -182,10 +239,25 @@
 /*------------------------------ 450 ------------------------------*/
 
 @media (max-width: 450px) {
+
+	.heading {
+		font-size: 3.6dvh;
+	}
+
 	.header {
 
 		&__socials {
 			display: none;
+		}
+	}
+
+	.about {
+		&__title {
+			font-size: 2.5dvh;
+		}
+
+		&__image {
+			// width: 220px;
 		}
 	}
 
@@ -253,6 +325,7 @@
 
 		&__list--mob {
 			display: block;
+
 			img {
 				width: 100%;
 			}
@@ -274,20 +347,19 @@
 		}
 	}
 
-	// .works {
-	// 	padding-top: 100px;
+	.heading {
+		font-size: 2.8dvh;
+	}
 
-	// 	&__list {
-	// 		display: flex;
-	// 		flex-direction: column;
-	// 	}
+	.about {
+		&__title {
+			font-size: 2.2dvh;
+		}
 
-	// 	&__list-item {
-	// 		&:nth-child(even) {
-	// 			transition: all 0.8s;
-	// 		}
-	// 	}
-	// }
+		&__text {
+			font-size: 1.8dvh;
+		}
+	}
 
 
 }
