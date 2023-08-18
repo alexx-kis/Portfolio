@@ -595,6 +595,7 @@ a {
 /*==================================== WORKS ====================================*/
 .works {
   padding: 60px 0 0 0;
+  height: 100dvh;
 }
 .works__inner {
   display: -webkit-box;
@@ -1133,11 +1134,18 @@ a {
   .header__socials {
     display: none;
   }
+  .about {
+    padding-top: 65px;
+  }
   .about__title {
     font-size: 2.5dvh;
   }
+  .skills {
+    padding-top: 65px;
+    padding-bottom: 60px;
+  }
   .contact {
-    padding: 60px 0;
+    padding: 65px 0;
   }
   .contact__heading {
     margin-bottom: 20px;
@@ -1173,8 +1181,11 @@ a {
     fill: #ff9500;
   }
   .works {
-    padding-top: 70px;
+    padding-top: 65px;
     padding-bottom: 30px;
+  }
+  .works__heading {
+    margin-bottom: 0;
   }
   .works__list {
     display: none;
@@ -1182,7 +1193,7 @@ a {
   .works__slider {
     display: block;
     margin: 0 auto;
-    width: 40dvh;
+    width: 35dvh;
   }
   .works__slide {
     width: 100%;
@@ -1195,11 +1206,14 @@ a {
     width: 100%;
     border-radius: 1dvh;
   }
+  .works__dots {
+    display: block;
+  }
   .works__dots .slick-dots {
-    margin-top: 1dvh;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    margin-top: 2dvh;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;

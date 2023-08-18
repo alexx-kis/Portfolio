@@ -87,8 +87,8 @@ $.scrollify({
 	offset: 0,
 	scrollbars: true,
 	// standardScrollElements: ".contact",	//- секция, у которой будет обычный скролл
-	setHeights: true,					//- подстраивание высот секций под высоту экрана
-	overflowScroll: true,
+	setHeights: false,					//- подстраивание высот секций под высоту экрана
+	// overflowScroll: true,
 	updateHash: true,
 	touchScroll: true,
 	before: function () { },
@@ -107,28 +107,6 @@ $(function () {
 		infinite: true,
 		dragable: false,
 		waitForAnimate: false,
-		// responsive:
-		// 	[
-		// 		{
-		// 			breakpoint: 1100,
-		// 			settings: {
-		// 				slidesToShow: 3,
-		// 			}
-		// 		},
-		// 		{
-		// 			breakpoint: 750,
-		// 			settings: {
-		// 				slidesToShow: 2,
-		// 			}
-		// 		},
-		// 		{
-		// 			breakpoint: 550,
-		// 			settings: {
-		// 				slidesToShow: 1,
-		// 				dragable: true,
-		// 			}
-		// 		},
-		// 	],
 		arrows: false,
 		dots: true,
 		appendDots: ('.works__dots'),
